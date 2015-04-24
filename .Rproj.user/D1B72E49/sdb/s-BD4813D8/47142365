@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle: \"Codebook\"\nauthor: \"Amanda Molling\"\ndate: \"Thursday, April 23, 2015\"\noutput: pdf_document:\n    keep_md: yes\n---\n \n##Study design and data processing\n \n###Collection of the raw data\nThe data was collected using download.file and unzip. The inertial data files were\nnot imported because the information contained is redundant with \n \n###Notes on the original (raw) data \nThe original raw data notes were unintelligible. However, R interpretated \nmore than I ever would have by looking at notepad++. The records are the observations. \n \n##Creating the tidy datafile\nThe tidy file was created using write.table and named as agro_data.txt\n \n###Guide to create the tidy data file\nIn order to recreate this data, you must have the \n \n###Cleaning of the data\nShort, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()\n \n##Description of the variables in the tiny_data.txt file\nGeneral description of the file including:\n - Dimensions of the dataset\n - Summary of the data\n - Variables present in the dataset\n \n(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)\n \n###Variable 1 (repeat this section for all variables in the dataset)\nShort description of what the variable describes.\n \nSome information on the variable including:\n - Class of the variable\n - Unique values/levels of the variable\n - Unit of measurement (if no unit of measurement list this as well)\n - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). \n \n(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)\n \n####Notes on variable 1:\nIf available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.\n \n##Sources\nSources you used if any, otherise leave out.\n \n##Annex\nIf you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)\n",
+    "created" : 1429823612665.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3084609408",
+    "id" : "47142365",
+    "lastKnownWriteTime" : 0,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

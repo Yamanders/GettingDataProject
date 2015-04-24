@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1429898057756.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "81F00AAD",
+    "lastKnownWriteTime" : 13229740524830817,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "activLabels",
+        "contentUrl" : "content?title=activLabels&file=e48438710b9b4a12a4e0d2499cccdf8e.htm",
+        "displayedObservations" : "6",
+        "displayedVariables" : 2,
+        "totalObservations" : "6",
+        "variables" : "2"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
