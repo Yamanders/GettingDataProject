@@ -66,8 +66,7 @@
   ## Clean up variable names:
       names(all_data) <- gsub("-meanFreq\\(\\)", "weightedfrequencyaverage", names(all_data), )
       names(all_data) <- gsub("tBody", "timedomainbody", names(all_data),) 
-      names(all_data) <- gsub("tgravity", "timedomainminusgravity", names(all_data), )
-      names(all_data) <- gsub("Acc", "acceleration", names(all_data))
+      names(all_data) <- gsub("Acc", "acceleration", names(all_data), )
       names(all_data) <- gsub("fBody", "frequencydomainbody", names(all_data),)
       names(all_data) <- gsub("-X", "xaxis", names(all_data), )
       names(all_data) <- gsub("-Y", "yaxis", names(all_data), )
@@ -78,14 +77,14 @@
       names(all_data) <- gsub("-std\\(\\)", "standarddeviation", names(all_data), )
       names(all_data) <- gsub("\\(\\)", "", names(all_data),)
       names(all_data) <- gsub("bodyBody", "body", names(all_data), )
-      
       names(all_data) <- gsub("-", "", names(all_data),)
       names(all_data) <- tolower(names(all_data))
+      names(all_data) <- gsub("tgravity", "timedomainminusgravity", names(all_data), )
  
   ## Add meaningful activity names:nrow(all_data)
       activLabels <- read.table("UCI HAR Dataset//activity_labels.txt")
       for (i in 1 : 10299){
-        print (as.character(activLabels[all_data[i,2],2]))
+       ## print (as.character(activLabels[all_data[i,2],2]))
         all_data[i, 2] <- as.character(activLabels[all_data[i, 2], 2])    
       }  
     
@@ -97,7 +96,8 @@
       names(agro_data)[2] = "participantid"
     
   ## Saving the data :
-      write.table(agro_data, "agro_data.txt")
+      closeAllConnections()  
+      write.table(agro_data, "agro_data.txt")  
       View(read.table("agro_data.txt", header= TRUE))
-
+      closeAllConnections()
 
