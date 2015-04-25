@@ -26,7 +26,7 @@ Author : Amanda Molling
       were spliced to only contain those values measured by the reseachers that represented a mean or standard deviation. These two data sets
       were merged together using rbind. Finally, as per step 5, the data was agreggated so that the mean for each participant for 
       each activity type was easily seen.
-### The inteded process steps were given by the instructor, Jeff Leek:
+### The intended process steps were given by the instructor, Jeff Leek:
          You should create one R script called run_analysis.R that does the following. 
           1. Merges the training and the test sets to create one data set.
           2. Extracts only the measurements on the mean and standard deviation for each measurement. 
