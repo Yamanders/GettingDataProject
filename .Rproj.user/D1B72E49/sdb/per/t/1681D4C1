@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1429979566082.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1681D4C1",
+    "lastKnownWriteTime" : 7741240723082584096,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "read.table(\"agro_data.txt\", header = TRUE)",
+        "contentUrl" : "content?title=read.table(%22agro_data.txt%22%2C+header+%3D+TRUE)&file=6c6246c2108c4f0c9b81061fd387ebfb.htm",
+        "displayedObservations" : "180",
+        "displayedVariables" : 79,
+        "totalObservations" : "180",
+        "variables" : "79"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

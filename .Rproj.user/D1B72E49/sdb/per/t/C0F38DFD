@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1429978964112.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C0F38DFD",
+    "lastKnownWriteTime" : 138505632,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "read.table(\"gitproject/agro_data.txt\")",
+        "contentUrl" : "content?title=read.table(%22gitproject%2Fagro_data.txt%22)&file=9514bfe9ae64408da87f4cc90fc3ea93.htm",
+        "displayedObservations" : 181,
+        "displayedVariables" : 83,
+        "totalObservations" : 181,
+        "variables" : 83
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

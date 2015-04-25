@@ -12,7 +12,6 @@
 ##    and subject
 
 ##  unzip("getdata-projectfiles-UCI HAR Dataset.zip")
-    list.files("UCI HAR Dataset")
   
   ## Read in variable names so that I can know what they are
     varNamesFile <- "UCI HAR Dataset//features.txt"
@@ -92,48 +91,13 @@
     
     
   ## Sorting the averages for each person for each activity 
-    agro_data <- aggregate(all_data, by = list(as.factor(all_data[, 2]), as.numeric(all_data[, 1])), FUN = mean)
+      agro_data <- aggregate(all_data, by = list(as.factor(all_data[, 2]), as.numeric(all_data[, 1])), FUN = mean)
+      agro_data <- agro_data[, c(1,2, 5:81)]
+      names(agro_data)[1] = "physicalactivitytypegroup"
+      names(agro_data)[2] = "participantid"
     
-  ## This will return an integer vector with 
-## the columns that contain mean or std.
-##varNames[, 1] <- varNames[, 2]
-
-
-
-## we will need to rbind the Y_test to the X_test
-
-
-
-
-
-
-## before I combine I need to add a variable for whether the record 
-## is a test or train record
-
-## Before that, I will remove variables not required
-## for this assignment.
-
-## From manually looking at the data, I find the following mean 
-## values that are relevant to me:
-
-## Not sure yet...
-
-
-
-
-
-
-
-## We don't actually need anything from the Inertial Signals folder so 
-## the following should be ignored:
-  ##X_body_acc_train = "UCI HAR Dataset//train//Inertial Signals//body_acc_x_train.txt"
-  ##X_body_acc_train = read.table(X_body_acc_train)
-  ## X_body_acc_train is 128 readings of X_body_acc_train for each participant
-## This will not be read in because our assignments wants the mean
-## This mean is alreay calculated in our X_train file.
-
-## According to the readme, the Y-test/y-train links the data
-## with which activity the record refers to.
-
+  ## Saving the data :
+      write.table(agro_data, "agro_data.txt")
+      View(read.table("agro_data.txt", header= TRUE))
 
 

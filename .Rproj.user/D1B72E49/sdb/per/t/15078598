@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1429979319961.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "15078598",
+    "lastKnownWriteTime" : 13229740524830817,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "Y_train",
+        "contentUrl" : "content?title=Y_train&file=d3c50e130bf1445d9a8c72b1b6fd7249.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 1,
+        "totalObservations" : 7352,
+        "variables" : 1
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
